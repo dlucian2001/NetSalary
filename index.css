@@ -1,0 +1,148 @@
+body{
+    background: rgb(84,95,177);
+    background: radial-gradient(circle, rgba(84,95,177,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+.header{
+    display: inline-flex;
+    margin-left: 220px;
+}
+
+.header h1{
+    color: aliceblue;
+}
+
+.header img{
+    height: 50px;
+    margin-top: 10px;
+}
+
+
+.container-calcul{
+    z-index: 1;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background: #5683b9;
+    padding-top: 35px;
+    box-shadow: 0 0 6px 0 black;
+    margin: 35px 220px;
+    display: inline-flex;
+}
+
+.calcul{
+    margin-left: 25px;
+    width: 70%;
+}
+
+.calcul-input{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.calcul-input input{
+    height: 25px;
+    margin-left: 10px;
+}
+
+
+.howto{
+    border: 1px solid gray;
+    border-radius: 10px;
+    background: #336aaa;
+    line-height: 25px;
+    margin-bottom: 25px;
+    color: aliceblue;
+    margin-right: 25px;
+}
+
+.howto h1,h4{
+    margin-left: 5px;
+}
+
+.net{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.button-12 {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  border-radius: 6px;
+  border: none;
+
+  background: white;
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
+  color: black;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-left: 50px ;
+}
+
+.button-12:focus {
+  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  outline: 0;
+}
+
+.button-12:hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 580px) {
+    .header{
+        display: inline-flex;
+        margin-left: auto;
+    }
+
+    .container-calcul{
+        z-index: 1;
+        background: #5683b9;
+        padding-top: 35px;
+        margin: 35px;
+        display: block;
+        border: 1px solid gray;
+        border-radius: 10px;
+    }
+
+    .calcul{
+        width: 80%;
+    }
+
+    div{
+        display:block;
+    }
+
+    .howto{
+        margin-left: 25px;
+        margin-top: 20px;
+        border: 1px solid gray;
+        border-radius: 10px;
+        background: #336aaa;
+        line-height: 25px;
+        margin-bottom: 25px;
+        color: aliceblue;
+        margin-right: 25px;
+    }
+
+    .calcul-input{
+        display: inline-flex;
+    }
+
+    .calcul-input input{
+        height: 10px;
+        margin: 2vh;
+        width: 15vh;
+    }
+
+    .calcul-input h2{
+       font-size: 16px;
+       margin: auto;
+    }
+}
